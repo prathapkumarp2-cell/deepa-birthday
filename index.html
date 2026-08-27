@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Deepa ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,serif;background:linear-gradient(135deg,#180b14,#351322,#160910);color:#fff;min-height:100vh}
+main{max-width:850px;margin:auto;padding:28px 18px 60px}
+header{text-align:center;padding:35px 10px}
+h1{font-size:clamp(38px,9vw,70px);margin:10px 0;color:#ffdbe8}
+h2{font-size:32px;color:#ffdbe8}
+p{font-size:18px;line-height:1.8;color:#f3dfe7}
+.card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:25px;margin:22px 0;box-shadow:0 15px 50px rgba(0,0,0,.25)}
+.day{text-align:center;font-size:15px;letter-spacing:3px;text-transform:uppercase;color:#f6a9c3}
+img{width:100%;max-height:620px;object-fit:cover;border-radius:18px;display:block;margin:18px 0}
+.lock{text-align:center;padding:35px 15px;font-size:20px;color:#f7c9d8}
+.hidden{display:none}
+.quote{text-align:center;font-style:italic;font-size:23px;color:#ffe4ed}
+footer{text-align:center;margin-top:35px;color:#d9a8b9}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="day">A little something for you</div>
+<h1>Deepa ❤️</h1>
+<p id="intro">Every day, one little piece of my heart.</p>
+</header>
+
+<div id="wrongDate" class="card hidden">
+<h2>🌹 Come back soon</h2>
+<p>This little journey is made for August 27 to September 6.</p>
+</div>
+
+<section id="day1" class="card reveal">
+<div class="day">August 27 • Day 1</div>
+<h2>It begins with you 🌹</h2>
+<p>Deepa, I made this little journey because one day of wishing you was not enough. From today until your birthday, I want to give you one small memory or feeling each day.</p>
+<p class="quote">“Some people become memories. You became my favourite part of life.”</p>
+</section>
+
+<section id="day2" class="card reveal">
+<div class="day">August 28 • Day 2</div>
+<h2>Where it all started</h2>
+<p>We met in college as colleagues. At that time, neither of us knew that those ordinary days would slowly become something so special to me.</p>
+</section>
+
+<section id="day3" class="card reveal">
+<div class="day">August 29 • Day 3</div>
+<h2>Our first long ride 🏍️</h2>
+<p>Our first long ride from Mysore, through Coffiness, towards the University. A simple ride became one of those memories I never want to forget.</p>
+<img src="Us.jpg" alt="Param and Deepa">
+</section>
+
+<section id="day4" class="card reveal">
+<div class="day">August 30 • Day 4</div>
+<h2>Coffiness ☕</h2>
+<p>That coffee, that place, those conversations… sometimes the smallest moments become the ones we remember the most.</p>
+</section>
+
+<section id="day5" class="card reveal">
+<div class="day">August 31 • Day 5</div>
+<h2>Walking with you 🚶❤️</h2>
+<p>I love the simple moments with you — walking, talking, laughing, and just being together. I don't need anything extraordinary when I have you beside me.</p>
+</section>
+
+<section id="day6" class="card reveal">
+<div class="day">September 1 • Day 6</div>
+<h2>Your eyes 👀</h2>
+<p>I love your eyes. There is something about them that I can never explain properly. I could look into them and still want one more moment.</p>
+<img src="Deepa.jpg" alt="Deepa">
+</section>
+
+<section id="day7" class="card reveal">
+<div class="day">September 2 • Day 7</div>
+<h2>Your hair ❤️</h2>
+<p>I love your hair — the way it falls, the way it frames your face, and all those little details that make you beautiful to me.</p>
+</section>
+
+<section id="day8" class="card reveal">
+<div class="day">September 3 • Day 8</div>
+<h2>Six months</h2>
+<p>Six months may sound like a short time, but with you they have given me so many moments I want to keep forever.</p>
+<img src="Love art.jpg" alt="Romantic couple artwork">
+</section>
+
+<section id="day9" class="card reveal">
+<div class="day">September 4 • Day 9</div>
+<h2>A moment to remember</h2>
+<p>Some photographs don't just capture a moment — they bring the feeling back. This is one of those moments for me.</p>
+<img src="Birthday Kiss.jpg" alt="A special moment">
+</section>
+
+<section id="day10" class="card reveal">
+<div class="day">September 5 • Day 10</div>
+<h2>One day to go 💌</h2>
+<p>Tomorrow is your day. But before I say Happy Birthday, I want you to know this: you are everything to me, and every moment with you means more than I can put into words.</p>
+</section>
+
+<section id="day11" class="card reveal">
+<div class="day">September 6 • Your Birthday 🎂</div>
+<h2>Happy Birthday, Deepa ❤️</h2>
+<p>Deepa, I love your eyes. I love your hair. I love your smile. I love the little moments we share.</p>
+<p>You are everything to me. I love you with all my heart, and I want to love you until my last breath.</p>
+<img src="Us.jpg" alt="Param and Deepa">
+<p class="quote">Happy Birthday to the person who made these six months so beautiful. ❤️</p>
+<p style="text-align:right">— Param</p>
+</section>
+
+<footer>Made with love, just for Deepa ❤️</footer>
+</main>
+
+<script>
+const start=new Date(2026,7,27); // August 27, 2026
+const today=new Date();
+const current=new Date(today.getFullYear(),today.getMonth(),today.getDate());
+const diff=Math.floor((current-start)/86400000)+1;
+
+document.querySelectorAll('.reveal').forEach((section,i)=>{
+  const day=i+1;
+  if(day>diff) section.innerHTML='<div class="lock">🔒<br><br>This memory is waiting for you.<br><small>Come back tomorrow ❤️</small></div>';
+});
+if(diff<1||diff>11){
+ document.querySelectorAll('.reveal').forEach(s=>s.classList.add('hidden'));
+ document.getElementById('wrongDate').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
